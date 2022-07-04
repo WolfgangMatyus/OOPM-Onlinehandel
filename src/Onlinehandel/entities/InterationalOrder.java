@@ -3,7 +3,7 @@ package Onlinehandel.entities;
 import Onlinehandel.provided.Costumer;
 
 public class InterationalOrder extends Order{
-    private float custom;
+    private float custom = 1;
 
     public InterationalOrder(long id, Costumer c, Iterable<Item> items) {
         super(id, c, items);
@@ -27,6 +27,6 @@ public class InterationalOrder extends Order{
         for(Item it : getItems().toArray(new Item[0]))
             total += it.totalValue();
 
-        return total;
+        return (int)(total*custom);
     }
 }
