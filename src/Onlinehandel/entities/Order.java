@@ -46,7 +46,7 @@ public abstract class Order implements Comparable<Order> {
 		this.costumer = new Costumer(orig.costumer);
 		this.goods = new HashSet<>();
 		for(Item it : orig.goods){
-			goods.toArray(new Item[0]);
+			this.goods.add(it);
 		}
 	}
 
@@ -63,7 +63,6 @@ public abstract class Order implements Comparable<Order> {
 	public final boolean addItems(Item item){
 		if(!isCollected() || !isDelivered())
 			return false;
-
 		return goods.add(item);
 	}
 

@@ -79,7 +79,7 @@ public class Main extends Object {
 		onRoute = filter(deliveries, new OnRouteMatcher());
 		print(onRoute);
 
-		export(onRoute, "deliveries_on_route.txt");
+		System.out.println(export(onRoute, "deliveries_on_route.txt"));
 	}
 
 	public static <T> List<T> filter(List<T> list, Matcher<? super T> m){
