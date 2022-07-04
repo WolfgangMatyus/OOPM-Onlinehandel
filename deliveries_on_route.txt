@@ -1,0 +1,2 @@
+120133210 [collected, not delivered] (EUR 27015,84)
+[Item{amount=16, description='Dell H2412', value=45099}, Item{amount=11, description='Lenovo ThinkPad', value=180000}]
